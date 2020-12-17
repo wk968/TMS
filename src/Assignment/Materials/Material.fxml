@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="rootpane" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Assignment.Materials.MaterialController">
+   <children>
+      <VBox layoutX="148.0" layoutY="14.0" prefHeight="289.0" prefWidth="638.0">
+         <children>
+            <AnchorPane prefHeight="310.0" prefWidth="847.0">
+               <children>
+                  <VBox layoutX="188.0" prefHeight="233.0" prefWidth="696.0">
+                     <children>
+                        <VBox prefHeight="191.0" prefWidth="623.0" spacing="12.0">
+                           <children>
+                              <TextField fx:id="tfMaterialID" />
+                              <TextField fx:id="tfCourseID" prefHeight="23.0" prefWidth="447.0">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <TextArea fx:id="tfMaterialDescription" prefHeight="112.0" prefWidth="447.0" />
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets top="30.0" />
+                     </padding>
+                  </VBox>
+                  <Button fx:id="btnDelete" layoutX="525.0" layoutY="253.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="75.0" text="Delete" />
+                  <Button fx:id="btnUpdate" layoutX="277.0" layoutY="253.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="81.0" text="Update" />
+                  <Button fx:id="btnInsert" layoutX="30.0" layoutY="253.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="75.0" text="Insert" />
+                  <VBox layoutX="30.0" layoutY="34.0" prefHeight="180.0" prefWidth="144.0" spacing="15.0">
+                     <children>
+                        <Label text="Material ID" />
+                        <Label prefHeight="28.0" prefWidth="66.0" text="Course ID" />
+                        <Label prefHeight="27.0" prefWidth="121.0" text="Material Description" />
+                     </children>
+                  </VBox>
+                  <Button fx:id="btnBack" layoutX="762.0" layoutY="253.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="137.0" text="Back to Dashboard" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <VBox prefHeight="720.0" prefWidth="129.0" style="-fx-background-color: #01cafe;">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Course" wrappingWidth="137.1806640625">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" />
+               </VBox.margin>
+            </Text>
+            <HBox prefHeight="43.0" prefWidth="150.0">
+               <children>
+                  <TextField prefHeight="19.0" prefWidth="108.0" promptText="Search Topic">
+                     <font>
+                        <Font size="9.0" />
+                     </font>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="78.0" prefHeight="44.0" prefWidth="152.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="61.0" prefWidth="19.0" style="-fx-background-color: #00add2;" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="21.0" fitWidth="9.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Button>
+                  <Text fx:id="btnProfile" fill="WHITE" onMouseClicked="#handleMouseAction" strokeType="OUTSIDE" strokeWidth="0.0" text=" Profile" wrappingWidth="113.13671875">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="122.0" prefHeight="44.0" prefWidth="152.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="61.0" prefWidth="19.0" style="-fx-background-color: #00add2;" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="21.0" fitWidth="9.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Button>
+                  <Text fx:id="btnRecords" fill="WHITE" onMouseClicked="#handleMouseAction" strokeType="OUTSIDE" strokeWidth="0.0" text=" Records" wrappingWidth="113.13671875">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="44.0" prefWidth="152.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="61.0" prefWidth="19.0" style="-fx-background-color: #00add2;" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="21.0" fitWidth="9.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Button>
+                  <Text fx:id="btnCourse" fill="WHITE" onMouseClicked="#handleButtonAction" strokeType="OUTSIDE" strokeWidth="0.0" text=" Course" wrappingWidth="113.13671875">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+      <TableView fx:id="tvMaterials" layoutX="148.0" layoutY="311.0" onMouseClicked="#handleMouseAction" prefHeight="408.0" prefWidth="1130.0">
+        <columns>
+          <TableColumn fx:id="colMaterialID" prefWidth="64.0" text="Material ID" />
+            <TableColumn fx:id="colCourseID" maxWidth="1.7976931348623157E308" minWidth="-1.0" prefWidth="94.0" text="Course ID" />
+            <TableColumn fx:id="colFile" prefWidth="192.0" text="File" />
+          <TableColumn fx:id="colDescription" prefWidth="854.0" text="Material Description" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnUpload" layoutX="1128.0" layoutY="84.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="75.0" text="Upload" />
+      <Button fx:id="btnDownload" layoutX="1128.0" layoutY="134.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="75.0" text="Download" />
+   </children>
+</AnchorPane>

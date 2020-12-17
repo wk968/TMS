@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="rootpane" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Assignment.loginRegister.RegisterController">
+    <children>
+        <AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1280.0">
+            <children>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" height="720.0" stroke="BLACK" strokeType="INSIDE" width="1280.0">
+                    <fill>
+                        <LinearGradient endX="1.0" endY="1.0" startX="0.5194174757281553" startY="0.14077669902912623">
+                            <stops>
+                                <Stop color="#48dbf2" />
+                                <Stop color="#48dbf2" offset="0.007246376811594203" />
+                                <Stop color="WHITE" offset="1.0" />
+                            </stops>
+                        </LinearGradient>
+                    </fill>
+                </Rectangle>
+                <VBox layoutX="112.0" layoutY="55.0" prefHeight="58.0" prefWidth="488.0">
+                    <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="New User Registration" wrappingWidth="438.421875">
+                            <font>
+                                <Font size="36.0" />
+                            </font>
+                        </Text>
+                    </children>
+                </VBox>
+                <VBox layoutX="112.0" layoutY="171.0" prefHeight="200.0" prefWidth="100.0" spacing="35.0">
+                    <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Username: ">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Password: ">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Name: ">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Age: ">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Gender: ">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Email: ">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Contact Number: ">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </Text>
+                    </children>
+                </VBox>
+                <VBox layoutX="309.0" layoutY="166.0" prefHeight="385.0" prefWidth="831.0" spacing="32.0">
+                    <children>
+                        <TextField fx:id="username" />
+                        <TextField fx:id="password" />
+                        <TextField fx:id="name" />
+                        <TextField fx:id="age" />
+                        <ChoiceBox fx:id="gender" prefWidth="150.0" />
+                        <TextField fx:id="email" />
+                        <TextField fx:id="contact" />
+                    </children>
+                </VBox>
+                <Button layoutX="324.0" layoutY="612.0" mnemonicParsing="false" text="Done">
+                    <font>
+                        <Font size="22.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" height="720.0" stroke="BLACK" strokeType="INSIDE" width="1280.0">
+            <fill>
+                <LinearGradient endX="1.0" endY="1.0" startX="0.5194174757281553" startY="0.14077669902912623">
+                    <stops>
+                        <Stop color="#48dbf2" />
+                        <Stop color="#48dbf2" offset="0.007246376811594203" />
+                        <Stop color="WHITE" offset="1.0" />
+                    </stops>
+                </LinearGradient>
+            </fill>
+        </Rectangle>
+        <VBox layoutX="112.0" layoutY="55.0" prefHeight="58.0" prefWidth="488.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="New User Registration" wrappingWidth="438.421875">
+                    <font>
+                        <Font size="36.0" />
+                    </font>
+                </Text>
+            </children>
+        </VBox>
+        <VBox layoutX="131.0" layoutY="176.0" prefHeight="200.0" prefWidth="100.0" spacing="35.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Username: ">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Text>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Password: ">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Text>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Age: ">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Text>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Gender: ">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Text>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Email: ">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Text>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Contact Number: ">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Text>
+            </children>
+        </VBox>
+        <VBox layoutX="308.0" layoutY="178.0" prefHeight="385.0" prefWidth="831.0" spacing="30.0">
+            <children>
+                <TextField fx:id="inputUsername" />
+            <PasswordField fx:id="inputPassword" />
+                <TextField fx:id="inputAge" />
+            <HBox prefHeight="31.0" prefWidth="831.0" spacing="50.0">
+               <children>
+                  <CheckBox fx:id="inputMale" mnemonicParsing="false" text="Male">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="inputFemale" mnemonicParsing="false" text="Female">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </CheckBox>
+               </children>
+            </HBox>
+                <TextField fx:id="inputEmail" />
+                <TextField fx:id="inputContact" />
+            </children>
+        </VBox>
+        <Button fx:id="btnCancel" layoutX="895.0" layoutY="612.0" mnemonicParsing="false" onMouseClicked="#handleCloseButtonAction" text="Cancel">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Button>
+      <VBox layoutX="101.0" layoutY="543.0" prefHeight="47.0" prefWidth="499.0">
+         <children>
+            <Label fx:id="lblStatus" prefHeight="72.0" prefWidth="499.0">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+         </children>
+      </VBox>
+      <Button fx:id="btnTrainee" layoutX="101.0" layoutY="612.0" mnemonicParsing="false" onMouseClicked="#registerComplete" prefHeight="48.0" prefWidth="233.0" text="Sign Up as Trainee">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+        <Button fx:id="btnTrainer" layoutX="370.0" layoutY="612.0" mnemonicParsing="false" onMouseClicked="#registerComplete" prefHeight="48.0" prefWidth="233.0" text="Sign up as Trainer">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>
